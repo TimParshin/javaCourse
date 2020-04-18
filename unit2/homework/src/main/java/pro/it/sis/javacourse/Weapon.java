@@ -1,7 +1,9 @@
 package pro.it.sis.javacourse;
 
-public class Weapon {
-    void hit(Target target, Damage.DamageBuilder givenDamage) {
-    target.gottenDamage = givenDamage;
+public abstract class Weapon {
+    void hit(Target target) {
+    target.gottenDamage = getGivenDamage();
     }
+
+    public abstract Damage getGivenDamage();
 }

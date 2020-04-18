@@ -43,7 +43,7 @@ public class WeaponTest {
 
         Target t = new IceGiant();
         Weapon w = new SwordOfYakutskNight();
-        //w.hit(t);
+        w.hit(t);
 
        int pd = t.getPhysicalDamage();
         int id = t.getIceDamage();
