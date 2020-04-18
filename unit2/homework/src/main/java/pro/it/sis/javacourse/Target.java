@@ -14,9 +14,11 @@ public class Target {
         return iceDamage;
     }
 
-    private int physicalDamage;
-
+    protected int physicalDamage;
     private int fireDamage;
-
     private int iceDamage;
+    public Damage.DamageBuilder gottenDamage = Damage.builder()
+            .physicalDamage(this.physicalDamage)
+            .iceDamage(this.iceDamage)
+            .fireDamage(this.fireDamage);
 }
