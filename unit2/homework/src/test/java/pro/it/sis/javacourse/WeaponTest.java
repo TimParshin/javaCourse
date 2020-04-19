@@ -55,8 +55,18 @@ public class WeaponTest {
     }
 
     @Test
-    public void testImplementationTest() {
-        Weapon s = new SwordOfYakutskNight();
-        System.out.println(s);
+    public void testYakutskSwordHitEfrit() {
+
+        Target t = new Efrit();
+        Weapon w = new SwordOfYakutskNight();
+        w.hit(t);
+
+        int pd = t.getPhysicalDamage();
+        int id = t.getIceDamage();
+        int fd = t.getFireDamage();
+
+        assertEquals(100, t.getPhysicalDamage());
+        assertEquals(50, t.getIceDamage());
+        assertEquals(0, t.getFireDamage());
     }
 }
