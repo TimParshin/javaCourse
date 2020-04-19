@@ -7,7 +7,7 @@ public class FlamingAsphaltSword extends Weapon {
 
     private Damage givenDamage = new Damage()
             .setPhysicalDamage(this.physicalDamage)
-            .setIceDamage(this.fireDamage);
+            .setFireDamage(this.fireDamage);
 
     @Override
     public Damage getGivenDamage() {return this.givenDamage;}
