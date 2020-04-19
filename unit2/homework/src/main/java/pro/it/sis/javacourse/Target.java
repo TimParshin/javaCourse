@@ -7,11 +7,11 @@ public class Target {
     }
 
     public int getFireDamage() {
-        return fireDamage;
+        return fireDamage = gottenDamage.getFireDamage();
     }
 
     public int getIceDamage() {
-        return iceDamage;
+        return iceDamage = gottenDamage.getIceDamage();
     }
 
     protected int physicalDamage;
