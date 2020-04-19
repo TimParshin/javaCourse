@@ -6,7 +6,7 @@ import lombok.Getter;
 public class SwordOfYakutskNight extends Weapon  {
 
     private int physicalDamage = 100;
-    private int iceDamage = 100;
+    private int iceDamage = 50;
 //    private Damage.DamageBuilder givenDamage = Damage.builder()
 //            .physicalDamage(this.physicalDamage)
 //            .iceDamage(this.iceDamage);
